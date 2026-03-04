@@ -1,17 +1,3 @@
-// ─── Build video grid ───
-const videoGrid = document.getElementById('video-grid');
-const videoLabels = ['Video 01', 'Video 02', 'Video 03', 'Video 04'];
-videoLabels.forEach((label, i) => {
-  const cell = document.createElement('div');
-  cell.className = 'video-drop';
-  cell.id = `video-${i}`;
-  cell.innerHTML = `
-    <input type="file" accept="video/*" onchange="loadVideo(this,'video-${i}')">
-    <span class="video-label">${label} — click to upload</span>
-  `;
-  videoGrid.appendChild(cell);
-});
-
 // ─── Media loaders ───
 function loadImg(input, containerId) {
   const file = input.files[0];

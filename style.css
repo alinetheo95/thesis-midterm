@@ -296,23 +296,19 @@ h1.thesis-title span {
 }
 
 /* ─── SPECULATIVE FUTURES ─── */
-.video-grid {
+#speculative .speculative-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
+  gap: 2px;
   background: #111;
 }
 
-.video-drop {
-  aspect-ratio: 16/9;
-  background: #050505;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  overflow: hidden;
-  transition: background 0.3s;
+#speculative .spec-cell img,
+#speculative .spec-cell video {
+  width: 100%;
+  height: 32vh;
+  object-fit: cover;
+  display: block;
 }
 
 .video-drop:hover { background: #0a0a0a; }
