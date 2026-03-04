@@ -383,3 +383,39 @@ h1.thesis-title span {
   object-fit: contain;
   display: block;
 }
+
+/* ─── SYSTEMS + TIMESCALES ─── */
+#systems .systems-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+}
+
+#systems .systems-grid img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── SYSTEMS TITLES ─── */
+#systems .systems-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+#systems .systems-title {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ccc;
+  padding: 10px 0 8px;
+}
+
+#systems .systems-cell img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: block;
+}
